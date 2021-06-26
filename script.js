@@ -19,11 +19,11 @@ containers.forEach((container) => {
 		const afterElement = getDragAfterElement(container, e.clientY);
 		console.log(afterElement);
 		const draggable = document.querySelector('.dragging');
-		if (afterElement === null) {
-			container.appendChild(draggable);
-		} else {
-			container.insertBefore(draggable, afterElement);
-		}
+		// if (afterElement === null) {
+		// container.appendChild(draggable);
+		// } else {
+		container.insertBefore(draggable, afterElement);
+		// }
 	});
 });
 
